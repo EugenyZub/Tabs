@@ -7,7 +7,8 @@
 
 <span>Необходимы классы hide и show в css!!!</span>
 
-Пример: <br>
+Пример:
+
 .hide {
   display: none;
 }
