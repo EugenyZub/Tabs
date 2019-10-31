@@ -1,9 +1,9 @@
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('DOMContentLoaded', () => {
 
     'use strict';
-    let tab = document.querySelectorAll('.info-header-tab'),
-        info = document.querySelector('.info-header'),
-        tabContent = document.querySelectorAll('.info-tabcontent');
+    const tab = document.querySelectorAll('.info-header-tab'),
+          info = document.querySelector('.info-header'),
+          tabContent = document.querySelectorAll('.info-tabcontent');
 
     //Скрытие всех пунктов кроме текущего
     function hideTabContent(a) {
@@ -22,8 +22,8 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     }
     //Изменения табов с информацией
-    info.addEventListener('click', function(e) {
-        let target = e.target;
+    info.addEventListener('click', (e) => {
+        const target = e.target;
         if (target && target.matches('div.info-header-tab')) {
             for(let i = 0; i < tab.length; i++) {
                 if (target == tab[i]) {
